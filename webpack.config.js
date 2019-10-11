@@ -4,8 +4,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'main.js',
+    // publicPath: '/TodoList/',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/TodoList/',
   },
   devtool: 'eval-source-map',
   devServer: {
@@ -26,7 +26,24 @@ module.exports = {
       },
       {
         test: /\.scss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'resolve-url-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+            },
+          },
+        ],
       },
     ],
   },

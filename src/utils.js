@@ -57,5 +57,34 @@ export const csvals = (obj1, obj2) => {
 
 export const mount = (node, host) => {
   host.innerHTML = '';
-  host.appendChild(node);
+  if (Array.isArray(node)) node.forEach(child => host.appendChild(child));
+  else host.appendChild(node);
 };
+
+export class Observable {
+  constructor(model) {
+    this.model = model;
+    this.handlers = {};
+    this.build(model);
+  }
+
+  on(action, handler) {
+    if (this.handlers[action]) this.handlers[action].push(handler);
+    else this.handlers[action] = [handler];
+  }
+
+  build(model) {
+    Object.getOwnPropertyNames(Object.getPrototypeOf(model)).forEach(prop => {
+      if (typeof model[prop] === 'function' && prop !== 'constructor') {
+        Object.defineProperty(this, prop, {
+          value: (...args) => {
+            const val = model[prop](...args);
+            if (this.handlers[prop])
+              this.handlers[prop].forEach(handler => handler(val));
+            return val;
+          },
+        });
+      }
+    });
+  }
+}
