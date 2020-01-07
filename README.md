@@ -10,7 +10,7 @@ Also, it leverages the event-driven programming paradigm.
 - HTML5
 - CSS3
 
-# Set up
+# :electric_plug: Set up
 
 To run the project:
 
@@ -18,11 +18,11 @@ To run the project:
 - Run `npm install`. It will install all the dependencies required by the project
 - Run `npm start` to start the development server. It will automatically open the page in your default browser.
 
-# Live demo
+# :computer: Live demo
 
 - https://fabienneibaf.github.io/TodoList/
 
-# Contribute
+# :pencil2: Contribute
 Feel free to contact me if you want to contribute.
 
 # Author
