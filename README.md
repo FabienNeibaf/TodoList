@@ -1,11 +1,14 @@
 # Todo List
 
-The Todo List project brings together the concepts of Object Oriented Programming, Factory Functions, Module Pattern, Single Responsibility and Tightly Coupled Objects.
-This is made simple but lay down a solid structure for a more complex web app.  
-Also it leverages the event driven development pattern.  
-It is part of [microverse](https://www.microverse.org/) curriculum.  
+The Todo List project brings together the concepts of Object-Oriented Programming, Factory Functions, Module Pattern, and Single Responsibility.  
+Also, it leverages the event-driven programming paradigm. 
 
 ![Todo App](https://github.com/FabienNeibaf/Portfolio/blob/master/src/images/Tada.png)
+
+# Technologies
+- Javascript
+- HTML5
+- CSS3
 
 # Set up
 
@@ -20,9 +23,14 @@ To run the project:
 - https://fabienneibaf.github.io/TodoList/
 
 # Contribute
-
-Feel free to contribute if you want to make it better.
+Feel free to contact me if you want to contribute.
 
 # Author
+- Github: https://github.com/FabienNeibaf
+- Email: fabienrakotomampiandra@gmail.com
 
-- [Fabien RAKOTOMAMPIANDRA](https://github.com/FabienNeibaf/)
+# Follow me
+- [LinkedIn](https://www.linkedin.com/in/fabien-rakotomampiandra-96567b17b/)
+- [AngelList](https://angel.co/fabien-rakotomampiandra)
+- [Twitter](https://twitter.com/Neibaflintone)
+- [Portfolio](https://fabienneibaf.github.io/Portfolio/)
